@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+<link rel="stylesheet" href="style.css">
 <head>
   <meta charset="UTF-8">
   <title>My Web Tool</title>
@@ -18,19 +19,7 @@
 
   <button onclick="clearText()">
   クリア
-</button>
-
-  <script>
-    function countText() {
-      const text = document.getElementById("word").value;
-      document.getElementById("result").textContent =
-        "文字数：" + text.length;
-    }
-
-    function clearText(){
-        document.getElementById("word").value="";
-        document.getElementById("result").textContent="";
-    }
-  </script>
+    </button>
+    <script src="script.js"></script>
 </body>
 </html>
