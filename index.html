@@ -8,7 +8,7 @@
 <body>
   <h1>はじめてのWebツール</h1>
 
-  <input id="text" type="text" placeholder="文字を入力">
+  <input id="word" type="text" placeholder="文字を入力">
 
   <button onclick="countText()">
     文字数を数える
@@ -16,11 +16,20 @@
 
   <p id="result"></p>
 
+  <button onclick="clearText()">
+  クリア
+</button>
+
   <script>
     function countText() {
-      const text = document.getElementById("text").value;
+      const text = document.getElementById("word").value;
       document.getElementById("result").textContent =
         "文字数：" + text.length;
+    }
+
+    function clearText(){
+        document.getElementById("word").value="";
+        document.getElementById("result").textContent="";
     }
   </script>
 </body>
